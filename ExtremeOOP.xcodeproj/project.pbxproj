@@ -149,6 +149,7 @@
 					};
 					283FC0492168FFAD00AC9A67 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 283FC0352168FFAC00AC9A67;
 					};
 				};
@@ -397,6 +398,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XW8MM2T22;
 				INFOPLIST_FILE = ExtremeOOPTests/Info.plist;
@@ -407,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.ExtremeOOPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExtremeOOP.app/ExtremeOOP";
@@ -418,6 +421,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XW8MM2T22;
 				INFOPLIST_FILE = ExtremeOOPTests/Info.plist;
