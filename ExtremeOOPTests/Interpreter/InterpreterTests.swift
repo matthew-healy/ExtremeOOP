@@ -29,4 +29,9 @@ class InterpreterTests: XCTestCase {
         XCTAssertEqual("\n", mockOutputDelegate.spyOutput)
     }
 
+    func test_printHelloWorldOutputsHelloWorld() {
+        subject.interpret(program: "PRINT \"Hello, World!\"")
+        XCTAssertEqual("Hello, World!", mockOutputDelegate.spyOutput)
+    }
+
 }

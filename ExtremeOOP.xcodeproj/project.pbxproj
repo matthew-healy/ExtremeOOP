@@ -16,8 +16,9 @@
 		283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05B2169002800AC9A67 /* Interpreter.swift */; };
 		283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */; };
 		283FC0602169022A00AC9A67 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05F2169022A00AC9A67 /* Program.swift */; };
-		283FC062216902A500AC9A67 /* InterpreterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC061216902A500AC9A67 /* InterpreterOutput.swift */; };
+		283FC062216902A500AC9A67 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC061216902A500AC9A67 /* Output.swift */; };
 		283FC066216902D800AC9A67 /* MockOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC065216902D800AC9A67 /* MockOutputDelegate.swift */; };
+		283FC068216908B600AC9A67 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC067216908B600AC9A67 /* Statement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,9 @@
 		283FC05B2169002800AC9A67 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
 		283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterOutputDelegate.swift; sourceTree = "<group>"; };
 		283FC05F2169022A00AC9A67 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
-		283FC061216902A500AC9A67 /* InterpreterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterOutput.swift; sourceTree = "<group>"; };
+		283FC061216902A500AC9A67 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
 		283FC065216902D800AC9A67 /* MockOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOutputDelegate.swift; sourceTree = "<group>"; };
+		283FC067216908B600AC9A67 /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,8 @@
 				283FC05B2169002800AC9A67 /* Interpreter.swift */,
 				283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */,
 				283FC05F2169022A00AC9A67 /* Program.swift */,
-				283FC061216902A500AC9A67 /* InterpreterOutput.swift */,
+				283FC061216902A500AC9A67 /* Output.swift */,
+				283FC067216908B600AC9A67 /* Statement.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -231,10 +234,11 @@
 			files = (
 				283FC0602169022A00AC9A67 /* Program.swift in Sources */,
 				283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */,
+				283FC068216908B600AC9A67 /* Statement.swift in Sources */,
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
 				283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */,
 				283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */,
-				283FC062216902A500AC9A67 /* InterpreterOutput.swift in Sources */,
+				283FC062216902A500AC9A67 /* Output.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

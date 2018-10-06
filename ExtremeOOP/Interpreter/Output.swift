@@ -1,4 +1,4 @@
-struct InterpreterOutput: ExpressibleByStringLiteral, Equatable {
+struct Output: ExpressibleByStringLiteral, Equatable {
     let raw: String
     
     init(stringLiteral value: String) {
