@@ -12,7 +12,12 @@
 		283FC03F2168FFAC00AC9A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283FC03D2168FFAC00AC9A67 /* Main.storyboard */; };
 		283FC0412168FFAD00AC9A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283FC0402168FFAD00AC9A67 /* Assets.xcassets */; };
 		283FC0442168FFAD00AC9A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283FC0422168FFAD00AC9A67 /* LaunchScreen.storyboard */; };
-		283FC04F2168FFAD00AC9A67 /* ExtremeOOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC04E2168FFAD00AC9A67 /* ExtremeOOPTests.swift */; };
+		283FC05A2168FFD600AC9A67 /* InterpreterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC0592168FFD600AC9A67 /* InterpreterTests.swift */; };
+		283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05B2169002800AC9A67 /* Interpreter.swift */; };
+		283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */; };
+		283FC0602169022A00AC9A67 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05F2169022A00AC9A67 /* Program.swift */; };
+		283FC062216902A500AC9A67 /* InterpreterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC061216902A500AC9A67 /* InterpreterOutput.swift */; };
+		283FC066216902D800AC9A67 /* MockOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC065216902D800AC9A67 /* MockOutputDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,13 @@
 		283FC0432168FFAD00AC9A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283FC0452168FFAD00AC9A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283FC04A2168FFAD00AC9A67 /* ExtremeOOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtremeOOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		283FC04E2168FFAD00AC9A67 /* ExtremeOOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtremeOOPTests.swift; sourceTree = "<group>"; };
 		283FC0502168FFAD00AC9A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283FC0592168FFD600AC9A67 /* InterpreterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterTests.swift; sourceTree = "<group>"; };
+		283FC05B2169002800AC9A67 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterOutputDelegate.swift; sourceTree = "<group>"; };
+		283FC05F2169022A00AC9A67 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		283FC061216902A500AC9A67 /* InterpreterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterOutput.swift; sourceTree = "<group>"; };
+		283FC065216902D800AC9A67 /* MockOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOutputDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		283FC0382168FFAC00AC9A67 /* ExtremeOOP */ = {
 			isa = PBXGroup;
 			children = (
+				283FC063216902B000AC9A67 /* Interpreter */,
 				283FC0392168FFAC00AC9A67 /* AppDelegate.swift */,
 				283FC03B2168FFAC00AC9A67 /* ViewController.swift */,
 				283FC03D2168FFAC00AC9A67 /* Main.storyboard */,
@@ -90,10 +101,30 @@
 		283FC04D2168FFAD00AC9A67 /* ExtremeOOPTests */ = {
 			isa = PBXGroup;
 			children = (
-				283FC04E2168FFAD00AC9A67 /* ExtremeOOPTests.swift */,
+				283FC064216902C800AC9A67 /* Interpreter */,
 				283FC0502168FFAD00AC9A67 /* Info.plist */,
 			);
 			path = ExtremeOOPTests;
+			sourceTree = "<group>";
+		};
+		283FC063216902B000AC9A67 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				283FC05B2169002800AC9A67 /* Interpreter.swift */,
+				283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */,
+				283FC05F2169022A00AC9A67 /* Program.swift */,
+				283FC061216902A500AC9A67 /* InterpreterOutput.swift */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		283FC064216902C800AC9A67 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				283FC0592168FFD600AC9A67 /* InterpreterTests.swift */,
+				283FC065216902D800AC9A67 /* MockOutputDelegate.swift */,
+			);
+			path = Interpreter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283FC0602169022A00AC9A67 /* Program.swift in Sources */,
+				283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */,
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
+				283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */,
 				283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */,
+				283FC062216902A500AC9A67 /* InterpreterOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283FC04F2168FFAD00AC9A67 /* ExtremeOOPTests.swift in Sources */,
+				283FC05A2168FFD600AC9A67 /* InterpreterTests.swift in Sources */,
+				283FC066216902D800AC9A67 /* MockOutputDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
