@@ -6,6 +6,8 @@ final class Interpreter {
     }
     
     func interpret(program: Program) {
-        outputDelegate?.output("")
+        let output: InterpreterOutput
+        output = program.isEmpty ? "" : "\n"
+        outputDelegate?.output(output)
     }
 }

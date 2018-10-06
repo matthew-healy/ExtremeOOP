@@ -2,7 +2,7 @@
 
 final class MockOutputDelegate: InterpreterOutputDelegate {
     var spyOutput: String?
-    func output(_ result: String) {
-        spyOutput = result
+    func output(_ result: InterpreterOutput) {
+        spyOutput = result.raw
     }
 }

@@ -24,4 +24,9 @@ class InterpreterTests: XCTestCase {
         XCTAssertEqual("", mockOutputDelegate.spyOutput)
     }
 
+    func test_barePrintStatementOutputsNewline() {
+        subject.interpret(program: "PRINT")
+        XCTAssertEqual("\n", mockOutputDelegate.spyOutput)
+    }
+
 }
