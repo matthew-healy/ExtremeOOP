@@ -20,23 +20,41 @@ class InterpreterTests: XCTestCase {
     }
 
     func test_emptyProgramProducesEmptyOutput() {
-        subject.interpret(program: "")
-        XCTAssertEqual("", mockOutputDelegate.spyOutput)
+        assert("", produces: "")
     }
 
     func test_barePrintStatementOutputsNewline() {
-        subject.interpret(program: "PRINT")
-        XCTAssertEqual("\n", mockOutputDelegate.spyOutput)
+        assert("PRINT", produces: "\n")
     }
 
     func test_printHelloWorldOutputsHelloWorld() {
-        subject.interpret(program: "PRINT \"Hello, World!\"")
-        XCTAssertEqual("Hello, World!", mockOutputDelegate.spyOutput)
+        assert("PRINT \"Hello, World!\"", produces: "Hello, World!")
     }
 
     func test_printCodeIsFunOutputsCodeIsFun() {
-        subject.interpret(program: "PRINT \"Code is fun\"")
-        XCTAssertEqual("Code is fun", mockOutputDelegate.spyOutput)
+        assert("PRINT \"Code is fun\"", produces: "Code is fun")
     }
 
+    func test_twoPrintStatementsInARowOutputsBothArgumentsSeparatedByNewLine() {
+        assert("""
+                PRINT "Hi"
+                PRINT "Hello"
+                """,
+               produces: """
+                Hi
+                Hello
+                """
+        )
+    }
+
+}
+
+private extension InterpreterTests {
+    func assert(
+        _ program: Program, produces expectedOutputString: String,
+        file: StaticString = #file, line: UInt = #line
+    ) {
+        subject.interpret(program: program)
+        XCTAssertEqual(expectedOutputString, mockOutputDelegate.spyOutput, file: file, line: line)
+    }
 }

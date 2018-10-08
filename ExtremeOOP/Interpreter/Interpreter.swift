@@ -12,5 +12,10 @@ final class Interpreter {
         }
         let firstStatementResult = statement.execute()
         outputDelegate?.output(firstStatementResult)
+        guard let nextStatement = program.secondStatement() else {
+            return
+        }
+        let secondStatementResult = nextStatement.execute()
+        outputDelegate?.output(secondStatementResult)
     }
 }
