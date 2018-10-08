@@ -1,22 +1,19 @@
 struct Program: ExpressibleByStringLiteral {
-    private let raw: String
+    private let statements: [Statement]
+
+    var isEmpty: Bool {
+        return statements.isEmpty
+    }
 
     init(stringLiteral value: String) {
-        self.raw = value
+        let raw = value.split(separator: "\n").map(String.init)
+        self.statements = raw.map(Statement.init)
     }
 
-    func firstStatement() -> Statement? {
-        return extractStatement(onLine: 0)
-    }
-
-    func secondStatement() -> Statement? {
-        return extractStatement(onLine: 1)
-    }
-
-    private func extractStatement(onLine lineNumber: Int) -> Statement? {
-        let rawStatements = raw.split(separator: "\n").map(String.init)
-        let statements = rawStatements.map(Statement.init)
-        guard statements.count > lineNumber else { return nil }
-        return statements[lineNumber]
+    func executeAllStatements(outputTo outputDelegate: InterpreterOutputDelegate?) {
+        statements.forEach { statement in
+            let result = statement.execute()
+            outputDelegate?.output(result)
+        }
     }
 }

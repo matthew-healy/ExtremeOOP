@@ -47,6 +47,20 @@ class InterpreterTests: XCTestCase {
         )
     }
 
+    func test_threePrintStatementsInARowOutputsAllArgumentsSeparatedByNewLine() {
+        assert("""
+                PRINT "Yo"
+                PRINT "What's"
+                PRINT "Up"
+                """,
+               produces: """
+                Yo
+                What's
+                Up
+                """
+        )
+    }
+
 }
 
 private extension InterpreterTests {
