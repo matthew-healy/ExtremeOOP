@@ -34,4 +34,9 @@ class InterpreterTests: XCTestCase {
         XCTAssertEqual("Hello, World!", mockOutputDelegate.spyOutput)
     }
 
+    func test_printCodeIsFunOutputsCodeIsFun() {
+        subject.interpret(program: "PRINT \"Code is fun\"")
+        XCTAssertEqual("Code is fun", mockOutputDelegate.spyOutput)
+    }
+
 }

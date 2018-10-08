@@ -6,9 +6,10 @@ struct Statement {
     }
 
     func execute() -> Output {
-        if raw.dropFirst(6).isEmpty {
+        let argument = raw.dropFirst(6)
+        if argument.isEmpty {
             return "\n"
         }
-        return "Hello, World!"
+        return Output(argument.filter { $0 != "\"" })
     }
 }
