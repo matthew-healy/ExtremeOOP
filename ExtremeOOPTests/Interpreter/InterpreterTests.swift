@@ -19,23 +19,23 @@ class InterpreterTests: XCTestCase {
         super.tearDown()
     }
 
-    func test_emptyProgramProducesEmptyOutput() {
+    func test_emptyProgram_producesEmptyOutput() {
         assert("", produces: "")
     }
 
-    func test_barePrintStatementOutputsNewline() {
+    func test_barePrintStatement_outputsNewline() {
         assert("PRINT", produces: "\n")
     }
 
-    func test_printHelloWorldOutputsHelloWorld() {
+    func test_printHelloWorld_outputsHelloWorld() {
         assert("PRINT \"Hello, World!\"", produces: "Hello, World!")
     }
 
-    func test_printCodeIsFunOutputsCodeIsFun() {
+    func test_printCodeIsFun_outputsCodeIsFun() {
         assert("PRINT \"Code is fun\"", produces: "Code is fun")
     }
 
-    func test_twoPrintStatementsInARowOutputsBothArgumentsSeparatedByNewLine() {
+    func test_twoPrintStatements_outputsBothArgumentsSeparatedByNewLine() {
         assert("""
                 PRINT "Hi"
                 PRINT "Hello"
@@ -47,7 +47,7 @@ class InterpreterTests: XCTestCase {
         )
     }
 
-    func test_threePrintStatementsInARowOutputsAllArgumentsSeparatedByNewLine() {
+    func test_threePrintStatements_outputsAllArgumentsSeparatedByNewLine() {
         assert("""
                 PRINT "Yo"
                 PRINT "What's"
