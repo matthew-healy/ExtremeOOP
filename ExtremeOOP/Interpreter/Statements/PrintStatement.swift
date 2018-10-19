@@ -15,21 +15,23 @@ struct PrintStatement: Statement {
     }
 
     func execute() {
-        let outputDelegate = context?.outputDelegate
+        guard let context = context else { return }
         
         if argument.isEmpty {
-            outputDelegate?.output("\n"); return
+            context.output("\n"); return
         }
         if isArgumentNumeric {
-            outputDelegate?.output(Output(argument)); return
+            context.output(Output(argument)); return
         }
         if isArgumentAVariable {
-            let storage = context?.storage
-            let outputString = String(storage?.retrieve() ?? 0)
-            let output = Output(outputString)
-            outputDelegate?.output(output); return
+            outputVariable(from: context); return
         }
         let stringArgument = Output(argument.filter { $0 != "\"" })
-        outputDelegate?.output(stringArgument)
+        context.output(stringArgument)
+    }
+
+    private func outputVariable(from context: ProgramContext) {
+        let output = Output(context.load())
+        context.output(output)
     }
 }

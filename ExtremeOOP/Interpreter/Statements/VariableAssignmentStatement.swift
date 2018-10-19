@@ -7,7 +7,6 @@ struct VariableAssignmentStatement: Statement {
     }
 
     func execute() {
-        let storage = context?.storage
-        storage?.assign()
+        context?.store()
     }
 }
