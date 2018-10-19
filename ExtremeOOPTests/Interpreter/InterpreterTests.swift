@@ -61,6 +61,18 @@ class InterpreterTests: XCTestCase {
         )
     }
 
+    func test_print123_outputs123() {
+        assert("PRINT 123", produces: "123")
+    }
+
+    func test_printMinus3_outputsMinus3() {
+        assert("PRINT -3", produces: "-3")
+    }
+
+    func test_print9_outputs9() {
+        assert("PRINT 9", produces: "9")
+    }
+
 }
 
 private extension InterpreterTests {

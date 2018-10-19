@@ -1,15 +1,23 @@
 struct Statement {
-    private let raw: String
+    private let argument: String
+
+    private var isArgumentNumeric: Bool {
+        return Int(argument) != nil
+    }
 
     init(raw: String) {
-        self.raw = raw
+        self.argument = String(raw.dropFirst(6))
     }
 
     func execute() -> Output {
-        let argument = raw.dropFirst(6)
         if argument.isEmpty {
             return "\n"
         }
+        if isArgumentNumeric {
+            return Output(argument)
+        }
         return Output(argument.filter { $0 != "\"" })
     }
+
+
 }
