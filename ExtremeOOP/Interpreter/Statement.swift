@@ -5,6 +5,10 @@ struct Statement {
         return Int(argument) != nil
     }
 
+    private var isArgumentAVariable: Bool {
+        return argument.count == 1
+    }
+
     init(raw: String) {
         self.argument = String(raw.dropFirst(6))
     }
@@ -15,6 +19,9 @@ struct Statement {
         }
         if isArgumentNumeric {
             return Output(argument)
+        }
+        if isArgumentAVariable {
+            return "0"
         }
         return Output(argument.filter { $0 != "\"" })
     }

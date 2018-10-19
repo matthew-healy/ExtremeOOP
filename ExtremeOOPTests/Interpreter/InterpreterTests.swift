@@ -73,6 +73,10 @@ class InterpreterTests: XCTestCase {
         assert("PRINT 9", produces: "9")
     }
 
+    func test_printUnassignedVariable_outputs0() {
+        assert("PRINT A", produces: "0")
+    }
+
 }
 
 private extension InterpreterTests {
