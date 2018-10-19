@@ -18,7 +18,13 @@
 		283FC0602169022A00AC9A67 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC05F2169022A00AC9A67 /* Program.swift */; };
 		283FC062216902A500AC9A67 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC061216902A500AC9A67 /* Output.swift */; };
 		283FC066216902D800AC9A67 /* MockOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC065216902D800AC9A67 /* MockOutputDelegate.swift */; };
-		283FC068216908B600AC9A67 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC067216908B600AC9A67 /* Statement.swift */; };
+		283FC068216908B600AC9A67 /* PrintStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC067216908B600AC9A67 /* PrintStatement.swift */; };
+		28677EE6217A149F004134F1 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EE5217A149F004134F1 /* Statement.swift */; };
+		28677EE8217A14B4004134F1 /* VariableAssignmentStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EE7217A14B4004134F1 /* VariableAssignmentStatement.swift */; };
+		28677EEA217A155C004134F1 /* NullStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EE9217A155C004134F1 /* NullStatement.swift */; };
+		28677EED217A1576004134F1 /* ProgramContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEC217A1576004134F1 /* ProgramContext.swift */; };
+		28677EEF217A1588004134F1 /* RuntimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEE217A1588004134F1 /* RuntimeStorage.swift */; };
+		28677EF1217A15DF004134F1 /* StatementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EF0217A15DF004134F1 /* StatementFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +53,13 @@
 		283FC05F2169022A00AC9A67 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		283FC061216902A500AC9A67 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
 		283FC065216902D800AC9A67 /* MockOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOutputDelegate.swift; sourceTree = "<group>"; };
-		283FC067216908B600AC9A67 /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		283FC067216908B600AC9A67 /* PrintStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatement.swift; sourceTree = "<group>"; };
+		28677EE5217A149F004134F1 /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		28677EE7217A14B4004134F1 /* VariableAssignmentStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableAssignmentStatement.swift; sourceTree = "<group>"; };
+		28677EE9217A155C004134F1 /* NullStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStatement.swift; sourceTree = "<group>"; };
+		28677EEC217A1576004134F1 /* ProgramContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContext.swift; sourceTree = "<group>"; };
+		28677EEE217A1588004134F1 /* RuntimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeStorage.swift; sourceTree = "<group>"; };
+		28677EF0217A15DF004134F1 /* StatementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +124,11 @@
 		283FC063216902B000AC9A67 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
+				28677EEB217A1569004134F1 /* ProgramContext */,
+				28677EE4217A148E004134F1 /* Statements */,
 				283FC05B2169002800AC9A67 /* Interpreter.swift */,
-				283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */,
 				283FC05F2169022A00AC9A67 /* Program.swift */,
 				283FC061216902A500AC9A67 /* Output.swift */,
-				283FC067216908B600AC9A67 /* Statement.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -128,6 +140,28 @@
 				283FC065216902D800AC9A67 /* MockOutputDelegate.swift */,
 			);
 			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		28677EE4217A148E004134F1 /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				283FC067216908B600AC9A67 /* PrintStatement.swift */,
+				28677EE5217A149F004134F1 /* Statement.swift */,
+				28677EE7217A14B4004134F1 /* VariableAssignmentStatement.swift */,
+				28677EE9217A155C004134F1 /* NullStatement.swift */,
+				28677EF0217A15DF004134F1 /* StatementFactory.swift */,
+			);
+			path = Statements;
+			sourceTree = "<group>";
+		};
+		28677EEB217A1569004134F1 /* ProgramContext */ = {
+			isa = PBXGroup;
+			children = (
+				28677EEC217A1576004134F1 /* ProgramContext.swift */,
+				28677EEE217A1588004134F1 /* RuntimeStorage.swift */,
+				283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */,
+			);
+			path = ProgramContext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,11 +268,17 @@
 			files = (
 				283FC0602169022A00AC9A67 /* Program.swift in Sources */,
 				283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */,
-				283FC068216908B600AC9A67 /* Statement.swift in Sources */,
+				283FC068216908B600AC9A67 /* PrintStatement.swift in Sources */,
+				28677EE8217A14B4004134F1 /* VariableAssignmentStatement.swift in Sources */,
+				28677EEA217A155C004134F1 /* NullStatement.swift in Sources */,
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
 				283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */,
 				283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */,
+				28677EF1217A15DF004134F1 /* StatementFactory.swift in Sources */,
+				28677EEF217A1588004134F1 /* RuntimeStorage.swift in Sources */,
 				283FC062216902A500AC9A67 /* Output.swift in Sources */,
+				28677EED217A1576004134F1 /* ProgramContext.swift in Sources */,
+				28677EE6217A149F004134F1 /* Statement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

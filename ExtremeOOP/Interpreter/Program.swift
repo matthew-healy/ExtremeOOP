@@ -1,19 +1,22 @@
-struct Program: ExpressibleByStringLiteral {
+struct Program {
+    private let context: ProgramContext
     private let statements: [Statement]
 
     var isEmpty: Bool {
         return statements.isEmpty
     }
 
-    init(stringLiteral value: String) {
-        let raw = value.split(separator: "\n").map(String.init)
-        self.statements = raw.map(Statement.init)
+    init(raw: String, context: ProgramContext) {
+        let rawStatements = raw.split(separator: "\n").map(String.init)
+        self.statements = rawStatements.map(StatementFactory.classifiedStatement)
+        self.context = context
     }
 
-    func executeAllStatements(outputTo outputDelegate: InterpreterOutputDelegate?) {
+    func executeAllStatements() {
         statements.forEach { statement in
-            let result = statement.execute()
-            outputDelegate?.output(result)
+            var statement = statement
+            statement.context = context
+            statement.execute()
         }
     }
 }

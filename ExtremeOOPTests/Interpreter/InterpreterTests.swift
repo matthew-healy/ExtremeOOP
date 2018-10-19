@@ -77,14 +77,23 @@ class InterpreterTests: XCTestCase {
         assert("PRINT A", produces: "0")
     }
 
+    func test_printA_Ais4_outputs4() {
+        assert("""
+                A=4
+                PRINT A
+                """,
+               produces: "4"
+        )
+    }
+
 }
 
 private extension InterpreterTests {
     func assert(
-        _ program: Program, produces expectedOutputString: String,
+        _ program: String, produces expectedOutputString: String,
         file: StaticString = #file, line: UInt = #line
     ) {
-        subject.interpret(program: program)
+        subject.interpret(rawProgram: program)
         XCTAssertEqual(expectedOutputString, mockOutputDelegate.spyOutput, file: file, line: line)
     }
 }
