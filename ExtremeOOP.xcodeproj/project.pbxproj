@@ -25,6 +25,9 @@
 		28677EED217A1576004134F1 /* ProgramContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEC217A1576004134F1 /* ProgramContext.swift */; };
 		28677EEF217A1588004134F1 /* RuntimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEE217A1588004134F1 /* RuntimeStorage.swift */; };
 		28677EF1217A15DF004134F1 /* StatementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EF0217A15DF004134F1 /* StatementFactory.swift */; };
+		2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */; };
+		2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */; };
+		2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		28677EEC217A1576004134F1 /* ProgramContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContext.swift; sourceTree = "<group>"; };
 		28677EEE217A1588004134F1 /* RuntimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeStorage.swift; sourceTree = "<group>"; };
 		28677EF0217A15DF004134F1 /* StatementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementFactory.swift; sourceTree = "<group>"; };
+		2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatementClassification.swift; sourceTree = "<group>"; };
+		2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStatementClassification.swift; sourceTree = "<group>"; };
+		2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementClassificationStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,11 +151,11 @@
 		28677EE4217A148E004134F1 /* Statements */ = {
 			isa = PBXGroup;
 			children = (
+				2899AB7B21810D8200A14BBB /* StatementFactory */,
 				283FC067216908B600AC9A67 /* PrintStatement.swift */,
 				28677EE5217A149F004134F1 /* Statement.swift */,
 				28677EE7217A14B4004134F1 /* VariableAssignmentStatement.swift */,
 				28677EE9217A155C004134F1 /* NullStatement.swift */,
-				28677EF0217A15DF004134F1 /* StatementFactory.swift */,
 			);
 			path = Statements;
 			sourceTree = "<group>";
@@ -162,6 +168,17 @@
 				283FC05D2169021700AC9A67 /* InterpreterOutputDelegate.swift */,
 			);
 			path = ProgramContext;
+			sourceTree = "<group>";
+		};
+		2899AB7B21810D8200A14BBB /* StatementFactory */ = {
+			isa = PBXGroup;
+			children = (
+				28677EF0217A15DF004134F1 /* StatementFactory.swift */,
+				2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */,
+				2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */,
+				2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */,
+			);
+			path = StatementFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				283FC0602169022A00AC9A67 /* Program.swift in Sources */,
+				2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */,
 				283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */,
 				283FC068216908B600AC9A67 /* PrintStatement.swift in Sources */,
+				2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */,
 				28677EE8217A14B4004134F1 /* VariableAssignmentStatement.swift in Sources */,
 				28677EEA217A155C004134F1 /* NullStatement.swift in Sources */,
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
+				2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */,
 				283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */,
 				283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */,
 				28677EF1217A15DF004134F1 /* StatementFactory.swift in Sources */,

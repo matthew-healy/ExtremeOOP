@@ -93,6 +93,13 @@ class InterpreterTests: XCTestCase {
                 """, produces: "9")
     }
 
+    func test_printB_BisMinus3_outputsMinus3() {
+        assert("""
+                B=-3
+                PRINT B
+                """, produces: "-3")
+    }
+
 }
 
 private extension InterpreterTests {
