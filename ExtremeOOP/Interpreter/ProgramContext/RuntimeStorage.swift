@@ -1,11 +1,11 @@
 class RuntimeStorage {
-    private var assignedVariableValue = 0
+    private var assignedVariables: [Variable : String] = [:]
 
-    func assign(value: Int) {
-        assignedVariableValue = value
+    func store(value: String, into variable: Variable) {
+        assignedVariables[variable] = value
     }
 
-    func retrieve() -> Int {
-        return assignedVariableValue
+    func retrieve(from variable: Variable) -> String {
+        return assignedVariables[variable, default: "0"]
     }
 }

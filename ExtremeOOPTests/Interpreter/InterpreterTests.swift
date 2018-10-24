@@ -90,14 +90,24 @@ class InterpreterTests: XCTestCase {
         assert("""
                 A=9
                 PRINT A
-                """, produces: "9")
+                """, produces: "9"
+        )
     }
 
     func test_printB_BisMinus3_outputsMinus3() {
         assert("""
                 B=-3
                 PRINT B
-                """, produces: "-3")
+                """, produces: "-3"
+        )
+    }
+
+    func test_printB_Ais112_outputs0() {
+        assert("""
+                A=112
+                PRINT B
+                """, produces: "0"
+        )
     }
 
 }
