@@ -10,8 +10,8 @@ class ProgramContext {
 
     // MARK: RuntimeStorage facade
 
-    func store() {
-        storage.assign()
+    func store(value: Int) {
+        storage.assign(value: value)
     }
 
     func load() -> String {

@@ -1,8 +1,8 @@
 class RuntimeStorage {
     private var assignedVariableValue = 0
 
-    func assign() {
-        assignedVariableValue = 4
+    func assign(value: Int) {
+        assignedVariableValue = value
     }
 
     func retrieve() -> Int {

@@ -7,6 +7,8 @@ struct VariableAssignmentStatement: Statement {
     }
 
     func execute() {
-        context?.store()
+        let valueString = String(raw.dropFirst(2))
+        let value = Int(valueString)!
+        context?.store(value: value)
     }
 }

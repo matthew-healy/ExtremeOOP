@@ -86,6 +86,13 @@ class InterpreterTests: XCTestCase {
         )
     }
 
+    func test_printA_Ais9_outputs9() {
+        assert("""
+                A=9
+                PRINT A
+                """, produces: "9")
+    }
+
 }
 
 private extension InterpreterTests {
