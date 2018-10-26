@@ -17,11 +17,9 @@ final class AdditionStatementOutputClassification: PrintOutputClassificationStra
     }
 
     private func add() -> String {
-        guard
-            let firstValue = Int(argumentComponents.first ?? "0"),
-            let secondValue = Int(argumentComponents.last ?? "0")
-        else { return "" }
-
-        return String(firstValue + secondValue)
+        let result = argumentComponents
+            .map(Int.init).compactMap { $0 }
+            .reduce(0, +)
+        return String(result)
     }
 }
