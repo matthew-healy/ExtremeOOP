@@ -23,4 +23,8 @@ class AdditionTests: XCTestCase, InterpreterTesting {
     func test_printTwoPlusTwo_outputs4() {
         assert("PRINT 2 + 2", produces: "4")
     }
+
+    func test_print10Plus18_outputs28() {
+        assert("PRINT 10 + 18", produces: "28")
+    }
 }
