@@ -16,10 +16,6 @@ class PrintTests: XCTestCase, InterpreterTesting {
         super.tearDown()
     }
 
-    func test_emptyProgram_producesEmptyOutput() {
-        assert("", produces: "")
-    }
-
     func test_barePrintStatement_outputsNewline() {
         assert("PRINT", produces: "\n")
     }

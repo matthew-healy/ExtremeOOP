@@ -16,6 +16,10 @@ class InterpreterTests: XCTestCase, InterpreterTesting {
         super.tearDown()
     }
 
+    func test_emptyProgram_producesEmptyOutput() {
+        assert("", produces: "")
+    }
+
     func test_twoPrintStatements_outputsBothArgumentsSeparatedByNewLine() {
         assert("""
                 PRINT "Hi"
