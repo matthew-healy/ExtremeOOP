@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283163512183BF4D00C05294 /* AdditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283163502183BF4D00C05294 /* AdditionTests.swift */; };
+		283163532183C06200C05294 /* AdditionStatementOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */; };
 		283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC0392168FFAC00AC9A67 /* AppDelegate.swift */; };
 		283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC03B2168FFAC00AC9A67 /* ViewController.swift */; };
 		283FC03F2168FFAC00AC9A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283FC03D2168FFAC00AC9A67 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		283163502183BF4D00C05294 /* AdditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionTests.swift; sourceTree = "<group>"; };
+		283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionStatementOutputClassification.swift; sourceTree = "<group>"; };
 		283FC0362168FFAC00AC9A67 /* ExtremeOOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtremeOOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283FC0392168FFAC00AC9A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283FC03B2168FFAC00AC9A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				2899AB8F21812D8600A14BBB /* PrintTests.swift */,
 				2899AB9221812F2300A14BBB /* InterpreterTesting.swift */,
 				2899AB9421812F9E00A14BBB /* VariableTests.swift */,
+				283163502183BF4D00C05294 /* AdditionTests.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				2899AB862181282D00A14BBB /* NumericArgumentClassification.swift */,
 				2899AB882181284000A14BBB /* VariableArgumentClassification.swift */,
 				2899AB8A2181285000A14BBB /* StringArgumentClassification.swift */,
+				283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */,
 			);
 			path = PrintOutputClassificationStrategy;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
 				2899AB822181194700A14BBB /* PrintOutputClassificationStrategy.swift in Sources */,
 				2899AB852181281000A14BBB /* EmptyOutputClassification.swift in Sources */,
+				283163532183C06200C05294 /* AdditionStatementOutputClassification.swift in Sources */,
 				2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */,
 				283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */,
 				283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */,
@@ -368,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283FC05A2168FFD600AC9A67 /* InterpreterTests.swift in Sources */,
+				283163512183BF4D00C05294 /* AdditionTests.swift in Sources */,
 				2899AB9321812F2300A14BBB /* InterpreterTesting.swift in Sources */,
 				2899AB9021812D8600A14BBB /* PrintTests.swift in Sources */,
 				2899AB9521812F9E00A14BBB /* VariableTests.swift in Sources */,
