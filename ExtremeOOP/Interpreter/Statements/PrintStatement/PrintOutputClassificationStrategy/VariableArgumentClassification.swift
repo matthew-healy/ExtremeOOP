@@ -12,8 +12,8 @@ final class VariableArgumentClassification: PrintOutputClassificationStrategy {
     
     func output() {
         guard
-            let rawVariable = argument.first,
-            let storedValue = context?.load(variable: Variable(raw: rawVariable))
+            let variable = Variable.contained(in: argument),
+            let storedValue = context?.load(variable: variable)
             else { return }
         let output = Output(storedValue)
         context?.output(output)

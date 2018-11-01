@@ -12,23 +12,21 @@ final class AdditionStatementOutputClassification: PrintOutputClassificationStra
     }
 
     func output() {
-        let output = Output(add())
+        let result = sum(from: parsersWithContext())
+        let output = Output(String(result))
         context?.output(output)
     }
 
-    private func add() -> String {
-        let result = argumentComponents
-            .filter { $0 != "+" }
-            .map(getArgument)
-            .reduce(0, +)
-        return String(result)
+    private func parsersWithContext() -> [AdditionArgumentParser] {
+        let parsers = argumentComponents
+            .compactMap(AdditionArgumentParser.init)
+        parsers.forEach { $0.context = context }
+        return parsers
     }
 
-    func getArgument(from stringValue: String) -> Int {
-        if let argument = Int(stringValue) {
-            return argument
-        }
-
-        return 1
+    func sum(from parsers: [AdditionArgumentParser]) -> Int {
+        return parsers
+            .map { $0.parse() }
+            .reduce(0, +)
     }
 }

@@ -45,4 +45,12 @@ class AdditionTests: XCTestCase, InterpreterTesting {
                 """, produces: "2"
         )
     }
+
+    func test_print2PlusA_AIs2_outputs4() {
+        assert("""
+                A=2
+                PRINT 2 + A
+                """, produces: "4"
+        )
+    }
 }

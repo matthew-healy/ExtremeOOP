@@ -7,8 +7,9 @@ struct VariableAssignmentStatement: Statement {
     }
 
     func execute() {
-        guard let rawVariable = raw.first else { return }
-        let variable = Variable(raw: rawVariable)
+        guard
+            let variable = Variable.contained(in: raw)
+        else { return }
         let valueString = String(raw.dropFirst(2))
         context?.assign(value: valueString, to: variable)
     }

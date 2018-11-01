@@ -40,6 +40,7 @@
 		2899AB9021812D8600A14BBB /* PrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB8F21812D8600A14BBB /* PrintTests.swift */; };
 		2899AB9321812F2300A14BBB /* InterpreterTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB9221812F2300A14BBB /* InterpreterTesting.swift */; };
 		2899AB9521812F9E00A14BBB /* VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB9421812F9E00A14BBB /* VariableTests.swift */; };
+		28C56695218BAF0A00F85C9C /* AdditionArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		2899AB8F21812D8600A14BBB /* PrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintTests.swift; sourceTree = "<group>"; };
 		2899AB9221812F2300A14BBB /* InterpreterTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterTesting.swift; sourceTree = "<group>"; };
 		2899AB9421812F9E00A14BBB /* VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTests.swift; sourceTree = "<group>"; };
+		28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionArgumentParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 				2899AB882181284000A14BBB /* VariableArgumentClassification.swift */,
 				2899AB8A2181285000A14BBB /* StringArgumentClassification.swift */,
 				283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */,
+				28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */,
 			);
 			path = PrintOutputClassificationStrategy;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				283FC0602169022A00AC9A67 /* Program.swift in Sources */,
 				2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */,
 				283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */,
+				28C56695218BAF0A00F85C9C /* AdditionArgumentParser.swift in Sources */,
 				283FC068216908B600AC9A67 /* PrintStatement.swift in Sources */,
 				2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */,
 				2899AB7F218118C800A14BBB /* Variable.swift in Sources */,
