@@ -41,6 +41,7 @@
 		2899AB9321812F2300A14BBB /* InterpreterTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB9221812F2300A14BBB /* InterpreterTesting.swift */; };
 		2899AB9521812F9E00A14BBB /* VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB9421812F9E00A14BBB /* VariableTests.swift */; };
 		28C56695218BAF0A00F85C9C /* AdditionArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */; };
+		28C56697218BBA4200F85C9C /* FormattedStatementsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C56696218BBA4200F85C9C /* FormattedStatementsBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		2899AB9221812F2300A14BBB /* InterpreterTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterTesting.swift; sourceTree = "<group>"; };
 		2899AB9421812F9E00A14BBB /* VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTests.swift; sourceTree = "<group>"; };
 		28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionArgumentParser.swift; sourceTree = "<group>"; };
+		28C56696218BBA4200F85C9C /* FormattedStatementsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedStatementsBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				2899AB8E2181289600A14BBB /* VariableAssignmentStatement */,
 				2899AB802181192900A14BBB /* PrintStatement */,
 				2899AB7B21810D8200A14BBB /* StatementFactory */,
+				28C56696218BBA4200F85C9C /* FormattedStatementsBuilder.swift */,
 				28677EE5217A149F004134F1 /* Statement.swift */,
 				28677EE9217A155C004134F1 /* NullStatement.swift */,
 			);
@@ -369,6 +372,7 @@
 				283FC062216902A500AC9A67 /* Output.swift in Sources */,
 				28677EED217A1576004134F1 /* ProgramContext.swift in Sources */,
 				28677EE6217A149F004134F1 /* Statement.swift in Sources */,
+				28C56697218BBA4200F85C9C /* FormattedStatementsBuilder.swift in Sources */,
 				2899AB892181284000A14BBB /* VariableArgumentClassification.swift in Sources */,
 				2899AB8B2181285000A14BBB /* StringArgumentClassification.swift in Sources */,
 			);

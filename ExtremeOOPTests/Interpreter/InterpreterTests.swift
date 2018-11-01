@@ -46,4 +46,8 @@ class InterpreterTests: XCTestCase, InterpreterTesting {
         )
     }
 
+    func test_semicolonCanBeUsedAsALineDelimeter() {
+        assert("A=1; PRINT A", produces: "1")
+    }
+
 }

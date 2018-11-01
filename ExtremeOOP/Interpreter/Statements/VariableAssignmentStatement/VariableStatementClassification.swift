@@ -12,6 +12,7 @@ struct VariableStatementClassification: StatementClassificationStrategy {
     }
 
     private func isVariableAssignment() -> Bool {
+        guard raw.count > 2 else { return false }
         let index = raw.index(raw.startIndex, offsetBy: 1)
         return raw[index] == assignment
     }
