@@ -39,19 +39,11 @@ class AdditionTests: XCTestCase, InterpreterTesting {
     // Can add variables
 
     func test_printAPlus1_AIs1_outputs2() {
-        assert("""
-                A=1
-                PRINT A + 1
-                """, produces: "2"
-        )
+        assert("A=1; PRINT A + 1 ", produces: "2")
     }
 
     func test_print2PlusA_AIs2_outputs4() {
-        assert("""
-                A=2
-                PRINT 2 + A
-                """, produces: "4"
-        )
+        assert("A=2; PRINT 2 + A", produces: "4")
     }
 
     func test_printAPlusB_AIs5_BIs44_outputs49() {
