@@ -53,4 +53,13 @@ class AdditionTests: XCTestCase, InterpreterTesting {
                 """, produces: "4"
         )
     }
+
+    func test_printAPlusB_AIs5_BIs44_outputs49() {
+        assert("""
+                A=5
+                B=44
+                PRINT A + B
+                """, produces: "49"
+        )
+    }
 }
