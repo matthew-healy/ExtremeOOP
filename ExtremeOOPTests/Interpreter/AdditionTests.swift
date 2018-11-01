@@ -16,6 +16,8 @@ class AdditionTests: XCTestCase, InterpreterTesting {
         super.tearDown()
     }
 
+    // Can add two numbers
+
     func test_printOnePlusOne_outputs2() {
         assert("PRINT 1 + 1", produces: "2")
     }
@@ -28,7 +30,19 @@ class AdditionTests: XCTestCase, InterpreterTesting {
         assert("PRINT 10 + 18", produces: "28")
     }
 
+    // Can add more than two numbers
+
     func test_print4Plus4Plus12_outputs20() {
         assert("PRINT 4 + 4 +  12", produces: "20")
+    }
+
+    // Can add variables
+
+    func test_printAPlus1_AIs1_outputs2() {
+        assert("""
+                A=1
+                PRINT A + 1
+                """, produces: "2"
+        )
     }
 }

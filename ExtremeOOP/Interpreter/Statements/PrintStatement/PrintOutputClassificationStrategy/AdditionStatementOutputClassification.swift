@@ -18,8 +18,17 @@ final class AdditionStatementOutputClassification: PrintOutputClassificationStra
 
     private func add() -> String {
         let result = argumentComponents
-            .map(Int.init).compactMap { $0 }
+            .filter { $0 != "+" }
+            .map(getArgument)
             .reduce(0, +)
         return String(result)
+    }
+
+    func getArgument(from stringValue: String) -> Int {
+        if let argument = Int(stringValue) {
+            return argument
+        }
+
+        return 1
     }
 }
