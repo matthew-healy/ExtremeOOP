@@ -166,10 +166,10 @@
 		283FC064216902C800AC9A67 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
-				283FC0592168FFD600AC9A67 /* InterpreterTests.swift */,
 				283FC065216902D800AC9A67 /* MockOutputDelegate.swift */,
-				2899AB8F21812D8600A14BBB /* PrintTests.swift */,
 				2899AB9221812F2300A14BBB /* InterpreterTesting.swift */,
+				283FC0592168FFD600AC9A67 /* InterpreterTests.swift */,
+				2899AB8F21812D8600A14BBB /* PrintTests.swift */,
 				2899AB9421812F9E00A14BBB /* VariableTests.swift */,
 				283163502183BF4D00C05294 /* AdditionTests.swift */,
 			);
