@@ -42,4 +42,8 @@ class SubtractionTests: XCTestCase, InterpreterTesting {
         assert("A=1; PRINT 2 - A", produces: "1")
     }
 
+    func test_printBMinus3_BIs21_outputs18() {
+        assert("B=21; PRINT B - 3", produces: "18")
+    }
+
 }

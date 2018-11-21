@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		283163512183BF4D00C05294 /* AdditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283163502183BF4D00C05294 /* AdditionTests.swift */; };
-		283163532183C06200C05294 /* AdditionStatementOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */; };
 		283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC0392168FFAC00AC9A67 /* AppDelegate.swift */; };
 		283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FC03B2168FFAC00AC9A67 /* ViewController.swift */; };
 		283FC03F2168FFAC00AC9A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283FC03D2168FFAC00AC9A67 /* Main.storyboard */; };
@@ -28,7 +27,8 @@
 		28677EEF217A1588004134F1 /* RuntimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEE217A1588004134F1 /* RuntimeStorage.swift */; };
 		28677EF1217A15DF004134F1 /* StatementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EF0217A15DF004134F1 /* StatementFactory.swift */; };
 		288276DC21A6120A006BBEC9 /* SubtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DB21A6120A006BBEC9 /* SubtractionTests.swift */; };
-		288276DE21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DD21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift */; };
+		288276DE21A612C2006BBEC9 /* NumericOperationOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DD21A612C2006BBEC9 /* NumericOperationOutputClassification.swift */; };
+		288276E021A62549006BBEC9 /* NumericOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DF21A62549006BBEC9 /* NumericOperation.swift */; };
 		2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */; };
 		2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */; };
 		2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */; };
@@ -42,7 +42,7 @@
 		2899AB9021812D8600A14BBB /* PrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB8F21812D8600A14BBB /* PrintTests.swift */; };
 		2899AB9321812F2300A14BBB /* InterpreterTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB9221812F2300A14BBB /* InterpreterTesting.swift */; };
 		2899AB9521812F9E00A14BBB /* VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB9421812F9E00A14BBB /* VariableTests.swift */; };
-		28C56695218BAF0A00F85C9C /* AdditionArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */; };
+		28C56695218BAF0A00F85C9C /* NumericOperationArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C56694218BAF0A00F85C9C /* NumericOperationArgumentParser.swift */; };
 		28C56697218BBA4200F85C9C /* FormattedStatementsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C56696218BBA4200F85C9C /* FormattedStatementsBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,6 @@
 
 /* Begin PBXFileReference section */
 		283163502183BF4D00C05294 /* AdditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionTests.swift; sourceTree = "<group>"; };
-		283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionStatementOutputClassification.swift; sourceTree = "<group>"; };
 		283FC0362168FFAC00AC9A67 /* ExtremeOOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtremeOOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283FC0392168FFAC00AC9A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283FC03B2168FFAC00AC9A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +81,8 @@
 		28677EEE217A1588004134F1 /* RuntimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeStorage.swift; sourceTree = "<group>"; };
 		28677EF0217A15DF004134F1 /* StatementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementFactory.swift; sourceTree = "<group>"; };
 		288276DB21A6120A006BBEC9 /* SubtractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionTests.swift; sourceTree = "<group>"; };
-		288276DD21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionStatementOutputClassification.swift; sourceTree = "<group>"; };
+		288276DD21A612C2006BBEC9 /* NumericOperationOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericOperationOutputClassification.swift; sourceTree = "<group>"; };
+		288276DF21A62549006BBEC9 /* NumericOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericOperation.swift; sourceTree = "<group>"; };
 		2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatementClassification.swift; sourceTree = "<group>"; };
 		2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStatementClassification.swift; sourceTree = "<group>"; };
 		2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementClassificationStrategy.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		2899AB8F21812D8600A14BBB /* PrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintTests.swift; sourceTree = "<group>"; };
 		2899AB9221812F2300A14BBB /* InterpreterTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterTesting.swift; sourceTree = "<group>"; };
 		2899AB9421812F9E00A14BBB /* VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTests.swift; sourceTree = "<group>"; };
-		28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionArgumentParser.swift; sourceTree = "<group>"; };
+		28C56694218BAF0A00F85C9C /* NumericOperationArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericOperationArgumentParser.swift; sourceTree = "<group>"; };
 		28C56696218BBA4200F85C9C /* FormattedStatementsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedStatementsBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -237,9 +237,9 @@
 				2899AB862181282D00A14BBB /* NumericArgumentClassification.swift */,
 				2899AB882181284000A14BBB /* VariableArgumentClassification.swift */,
 				2899AB8A2181285000A14BBB /* StringArgumentClassification.swift */,
-				283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */,
-				28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */,
-				288276DD21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift */,
+				288276DD21A612C2006BBEC9 /* NumericOperationOutputClassification.swift */,
+				28C56694218BAF0A00F85C9C /* NumericOperationArgumentParser.swift */,
+				288276DF21A62549006BBEC9 /* NumericOperation.swift */,
 			);
 			path = PrintOutputClassificationStrategy;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				283FC0602169022A00AC9A67 /* Program.swift in Sources */,
 				2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */,
 				283FC05C2169002800AC9A67 /* Interpreter.swift in Sources */,
-				28C56695218BAF0A00F85C9C /* AdditionArgumentParser.swift in Sources */,
+				28C56695218BAF0A00F85C9C /* NumericOperationArgumentParser.swift in Sources */,
 				283FC068216908B600AC9A67 /* PrintStatement.swift in Sources */,
 				2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */,
 				2899AB7F218118C800A14BBB /* Variable.swift in Sources */,
@@ -368,7 +368,6 @@
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
 				2899AB822181194700A14BBB /* PrintOutputClassificationStrategy.swift in Sources */,
 				2899AB852181281000A14BBB /* EmptyOutputClassification.swift in Sources */,
-				283163532183C06200C05294 /* AdditionStatementOutputClassification.swift in Sources */,
 				2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */,
 				283FC05E2169021700AC9A67 /* InterpreterOutputDelegate.swift in Sources */,
 				283FC03A2168FFAC00AC9A67 /* AppDelegate.swift in Sources */,
@@ -376,11 +375,12 @@
 				28677EEF217A1588004134F1 /* RuntimeStorage.swift in Sources */,
 				2899AB8D2181286400A14BBB /* PrintOutputClassificationStrategies.swift in Sources */,
 				283FC062216902A500AC9A67 /* Output.swift in Sources */,
+				288276E021A62549006BBEC9 /* NumericOperation.swift in Sources */,
 				28677EED217A1576004134F1 /* ProgramContext.swift in Sources */,
 				28677EE6217A149F004134F1 /* Statement.swift in Sources */,
 				28C56697218BBA4200F85C9C /* FormattedStatementsBuilder.swift in Sources */,
 				2899AB892181284000A14BBB /* VariableArgumentClassification.swift in Sources */,
-				288276DE21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift in Sources */,
+				288276DE21A612C2006BBEC9 /* NumericOperationOutputClassification.swift in Sources */,
 				2899AB8B2181285000A14BBB /* StringArgumentClassification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

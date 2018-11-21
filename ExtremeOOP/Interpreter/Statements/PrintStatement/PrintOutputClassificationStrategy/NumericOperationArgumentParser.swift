@@ -1,20 +1,20 @@
-final class AdditionArgumentParser {
+final class NumericOperationArgumentParser {
     weak var context: ProgramContext?
     private let raw: String
-
-    init?(raw: String) {
-        guard raw != "+" else { return nil }
+    
+    init?(raw: String, symbol: String) {
+        guard raw != symbol else { return nil }
         self.raw = raw
     }
-
+    
     func parse() -> Int {
         if let argument = Int(raw) {
             return argument
         }
-
+        
         return variableValue()
     }
-
+    
     private func variableValue() -> Int {
         guard
             let variable = Variable.contained(in: raw),
