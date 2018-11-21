@@ -18,8 +18,12 @@ class SubtractionTests: XCTestCase, InterpreterTesting {
 
     // Can subtract two numbers
 
-    func test_printOneMinusOne_outputs0() {
+    func test_print1Minus1_outputs0() {
         assert("PRINT 1 - 1", produces: "0")
+    }
+
+    func test_print1Minus2_outputsMinus1() {
+        assert("PRINT 1 - 2", produces: "-1")
     }
 
 }

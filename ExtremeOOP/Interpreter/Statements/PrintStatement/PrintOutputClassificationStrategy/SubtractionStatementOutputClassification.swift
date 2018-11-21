@@ -12,9 +12,15 @@ final class SubtractionStatementOutputClassification: PrintOutputClassificationS
     }
 
     func output() {
-        let output = Output(String("0"))
+        let output = Output(String(difference()))
         context?.output(output)
     }
 
-
+    private func difference() -> Int {
+        guard
+            let firstArgument = argumentComponents.first.flatMap(Int.init),
+            let secondArgument = argumentComponents.last.flatMap(Int.init)
+        else { return 0 }
+        return firstArgument - secondArgument
+    }
 }

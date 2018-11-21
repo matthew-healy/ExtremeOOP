@@ -18,11 +18,11 @@ class AdditionTests: XCTestCase, InterpreterTesting {
 
     // Can add two numbers
 
-    func test_printOnePlusOne_outputs2() {
+    func test_print1Plus1_outputs2() {
         assert("PRINT 1 + 1", produces: "2")
     }
 
-    func test_printTwoPlusTwo_outputs4() {
+    func test_print2Plus2_outputs4() {
         assert("PRINT 2 + 2", produces: "4")
     }
 
