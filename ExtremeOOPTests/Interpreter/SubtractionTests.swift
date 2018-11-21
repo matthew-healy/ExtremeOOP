@@ -36,4 +36,10 @@ class SubtractionTests: XCTestCase, InterpreterTesting {
         assert("PRINT 6 - 1 - 2", produces: "3")
     }
 
+    // Can subtract variables
+
+    func test_print2MinusA_AIs1_outputs1() {
+        assert("A=1; PRINT 2 - A", produces: "1")
+    }
+
 }
