@@ -1,3 +1,6 @@
+typealias AdditionOutputClassification = NumericOperationOutputClassification<Addition>
+typealias SubtractionOutputClassification = NumericOperationOutputClassification<Subtraction>
+
 final class NumericOperationOutputClassification<
     Operation: NumericOperation
 >: PrintOutputClassificationStrategy {
