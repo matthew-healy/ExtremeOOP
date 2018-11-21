@@ -5,6 +5,7 @@ struct PrintOutputClassificationStrategies {
         NumericArgumentClassification.self,
         VariableArgumentClassification.self,
         AdditionStatementOutputClassification.self,
+        SubtractionStatementOutputClassification.self,
         StringArgumentClassification.self
     ]
     

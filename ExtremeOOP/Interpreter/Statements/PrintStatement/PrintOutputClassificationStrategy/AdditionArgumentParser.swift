@@ -20,7 +20,7 @@ final class AdditionArgumentParser {
             let variable = Variable.contained(in: raw),
             let stringValue = context?.load(variable: variable),
             let value = Int(stringValue)
-            else { return 0 }
+        else { return 0 }
         return value
     }
 }

@@ -27,6 +27,8 @@
 		28677EED217A1576004134F1 /* ProgramContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEC217A1576004134F1 /* ProgramContext.swift */; };
 		28677EEF217A1588004134F1 /* RuntimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EEE217A1588004134F1 /* RuntimeStorage.swift */; };
 		28677EF1217A15DF004134F1 /* StatementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28677EF0217A15DF004134F1 /* StatementFactory.swift */; };
+		288276DC21A6120A006BBEC9 /* SubtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DB21A6120A006BBEC9 /* SubtractionTests.swift */; };
+		288276DE21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DD21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift */; };
 		2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */; };
 		2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */; };
 		2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */; };
@@ -79,6 +81,8 @@
 		28677EEC217A1576004134F1 /* ProgramContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContext.swift; sourceTree = "<group>"; };
 		28677EEE217A1588004134F1 /* RuntimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeStorage.swift; sourceTree = "<group>"; };
 		28677EF0217A15DF004134F1 /* StatementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementFactory.swift; sourceTree = "<group>"; };
+		288276DB21A6120A006BBEC9 /* SubtractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionTests.swift; sourceTree = "<group>"; };
+		288276DD21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionStatementOutputClassification.swift; sourceTree = "<group>"; };
 		2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatementClassification.swift; sourceTree = "<group>"; };
 		2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStatementClassification.swift; sourceTree = "<group>"; };
 		2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementClassificationStrategy.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				2899AB8F21812D8600A14BBB /* PrintTests.swift */,
 				2899AB9421812F9E00A14BBB /* VariableTests.swift */,
 				283163502183BF4D00C05294 /* AdditionTests.swift */,
+				288276DB21A6120A006BBEC9 /* SubtractionTests.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				2899AB8A2181285000A14BBB /* StringArgumentClassification.swift */,
 				283163522183C06200C05294 /* AdditionStatementOutputClassification.swift */,
 				28C56694218BAF0A00F85C9C /* AdditionArgumentParser.swift */,
+				288276DD21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift */,
 			);
 			path = PrintOutputClassificationStrategy;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 				28677EE6217A149F004134F1 /* Statement.swift in Sources */,
 				28C56697218BBA4200F85C9C /* FormattedStatementsBuilder.swift in Sources */,
 				2899AB892181284000A14BBB /* VariableArgumentClassification.swift in Sources */,
+				288276DE21A612C2006BBEC9 /* SubtractionStatementOutputClassification.swift in Sources */,
 				2899AB8B2181285000A14BBB /* StringArgumentClassification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +392,7 @@
 				283FC05A2168FFD600AC9A67 /* InterpreterTests.swift in Sources */,
 				283163512183BF4D00C05294 /* AdditionTests.swift in Sources */,
 				2899AB9321812F2300A14BBB /* InterpreterTesting.swift in Sources */,
+				288276DC21A6120A006BBEC9 /* SubtractionTests.swift in Sources */,
 				2899AB9021812D8600A14BBB /* PrintTests.swift in Sources */,
 				2899AB9521812F9E00A14BBB /* VariableTests.swift in Sources */,
 				283FC066216902D800AC9A67 /* MockOutputDelegate.swift in Sources */,

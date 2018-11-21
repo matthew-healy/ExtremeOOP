@@ -24,7 +24,7 @@ final class AdditionStatementOutputClassification: PrintOutputClassificationStra
         return parsers
     }
 
-    func sum(from parsers: [AdditionArgumentParser]) -> Int {
+    private func sum(from parsers: [AdditionArgumentParser]) -> Int {
         return parsers
             .map { $0.parse() }
             .reduce(0, +)
