@@ -21,4 +21,8 @@ class MultiplicationTests: XCTestCase, InterpreterTesting {
     func test_print1Times1_outputs1() {
         assert("PRINT 1 * 1", produces: "1")
     }
+
+    func test_print2Times3_outputs6() {
+        assert("PRINT 2 * 3", produces: "6")
+    }
 }
