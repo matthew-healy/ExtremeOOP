@@ -26,4 +26,10 @@ class SubtractionTests: XCTestCase, InterpreterTesting {
         assert("PRINT 1 - 2", produces: "-1")
     }
 
+    // Can subtract more than two numbers
+
+    func test_print4Minus1Minus1_outputs2() {
+        assert("PRINT 4 - 1 - 1", produces: "2")
+    }
+
 }
