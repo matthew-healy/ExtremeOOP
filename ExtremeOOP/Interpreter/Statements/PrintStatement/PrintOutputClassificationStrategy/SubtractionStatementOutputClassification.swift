@@ -17,11 +17,8 @@ final class SubtractionStatementOutputClassification: PrintOutputClassificationS
     }
 
     private func difference() -> Int {
-        guard
-            argumentComponents.count == 3,
-            let firstArgument = argumentComponents.first.flatMap(Int.init),
-            let secondArgument = argumentComponents.last.flatMap(Int.init)
-        else { return 2 }
-        return firstArgument - secondArgument
+        let arguments = argumentComponents.compactMap(Int.init)
+        guard let head = arguments.first else { return 0 }
+        return arguments.dropFirst().reduce(head, -)
     }
 }

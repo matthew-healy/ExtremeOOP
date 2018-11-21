@@ -32,4 +32,8 @@ class SubtractionTests: XCTestCase, InterpreterTesting {
         assert("PRINT 4 - 1 - 1", produces: "2")
     }
 
+    func test_print6Minus1Minus2_outputs3() {
+        assert("PRINT 6 - 1 - 2", produces: "3")
+    }
+
 }
