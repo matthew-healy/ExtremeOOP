@@ -12,12 +12,14 @@ final class MultiplicationOutputClassification: PrintOutputClassificationStrateg
     }
 
     func output() {
-        guard
-            let firstArg = argumentComponents.first.flatMap(Int.init),
-            let secondArg = argumentComponents.last.flatMap(Int.init)
-        else { return }
-        let result = firstArg * secondArg
+        let result = multiply()
         let output = Output(String(result))
         context?.output(output)
+    }
+
+    private func multiply() -> Int {
+        return argumentComponents
+            .compactMap(Int.init)
+            .reduce(1, *)
     }
 }

@@ -25,4 +25,10 @@ class MultiplicationTests: XCTestCase, InterpreterTesting {
     func test_print2Times3_outputs6() {
         assert("PRINT 2 * 3", produces: "6")
     }
+
+    // Can multiply more than two numbers
+
+    func test_print2Times2Times2_outputs8() {
+        assert("PRINT 2 * 2 * 2", produces: "8")
+    }
 }
