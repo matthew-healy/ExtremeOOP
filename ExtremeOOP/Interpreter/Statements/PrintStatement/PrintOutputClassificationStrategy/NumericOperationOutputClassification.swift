@@ -1,5 +1,6 @@
 typealias AdditionOutputClassification = NumericOperationOutputClassification<Addition>
 typealias SubtractionOutputClassification = NumericOperationOutputClassification<Subtraction>
+typealias MultiplicationOutputClassification = NumericOperationOutputClassification<Multiplication>
 
 final class NumericOperationOutputClassification<
     Operation: NumericOperation

@@ -30,7 +30,6 @@
 		288276DE21A612C2006BBEC9 /* NumericOperationOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DD21A612C2006BBEC9 /* NumericOperationOutputClassification.swift */; };
 		288276E021A62549006BBEC9 /* NumericOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276DF21A62549006BBEC9 /* NumericOperation.swift */; };
 		288276E221A626A5006BBEC9 /* MultiplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276E121A626A5006BBEC9 /* MultiplicationTests.swift */; };
-		288276E421A627F2006BBEC9 /* MultiplicationOutputClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288276E321A627F2006BBEC9 /* MultiplicationOutputClassification.swift */; };
 		2899AB7821810D2100A14BBB /* PrintStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */; };
 		2899AB7A21810D3D00A14BBB /* VariableStatementClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */; };
 		2899AB7D21810DD100A14BBB /* StatementClassificationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */; };
@@ -86,7 +85,6 @@
 		288276DD21A612C2006BBEC9 /* NumericOperationOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericOperationOutputClassification.swift; sourceTree = "<group>"; };
 		288276DF21A62549006BBEC9 /* NumericOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericOperation.swift; sourceTree = "<group>"; };
 		288276E121A626A5006BBEC9 /* MultiplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTests.swift; sourceTree = "<group>"; };
-		288276E321A627F2006BBEC9 /* MultiplicationOutputClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationOutputClassification.swift; sourceTree = "<group>"; };
 		2899AB7721810D2100A14BBB /* PrintStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatementClassification.swift; sourceTree = "<group>"; };
 		2899AB7921810D3D00A14BBB /* VariableStatementClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStatementClassification.swift; sourceTree = "<group>"; };
 		2899AB7C21810DD100A14BBB /* StatementClassificationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementClassificationStrategy.swift; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 				288276DD21A612C2006BBEC9 /* NumericOperationOutputClassification.swift */,
 				28C56694218BAF0A00F85C9C /* NumericOperationArgumentParser.swift */,
 				288276DF21A62549006BBEC9 /* NumericOperation.swift */,
-				288276E321A627F2006BBEC9 /* MultiplicationOutputClassification.swift */,
 			);
 			path = PrintOutputClassificationStrategy;
 			sourceTree = "<group>";
@@ -371,7 +368,6 @@
 				28677EE8217A14B4004134F1 /* VariableAssignmentStatement.swift in Sources */,
 				28677EEA217A155C004134F1 /* NullStatement.swift in Sources */,
 				2899AB872181282D00A14BBB /* NumericArgumentClassification.swift in Sources */,
-				288276E421A627F2006BBEC9 /* MultiplicationOutputClassification.swift in Sources */,
 				283FC03C2168FFAC00AC9A67 /* ViewController.swift in Sources */,
 				2899AB822181194700A14BBB /* PrintOutputClassificationStrategy.swift in Sources */,
 				2899AB852181281000A14BBB /* EmptyOutputClassification.swift in Sources */,

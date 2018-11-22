@@ -31,4 +31,17 @@ class MultiplicationTests: XCTestCase, InterpreterTesting {
     func test_print2Times2Times2_outputs8() {
         assert("PRINT 2 * 2 * 2", produces: "8")
     }
+
+    // Can multiple two variables
+
+    func test_printATimesBTimesC_AIs3_BIs10_CIs2_is60() {
+        assert("""
+                A=3
+                B=10
+                C=2
+                PRINT A * B * C
+                """,
+               produces: "60"
+        )
+    }
 }
